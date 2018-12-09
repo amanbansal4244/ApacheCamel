@@ -1,0 +1,14 @@
+1. This is simple one REST API and value is picking based on active profile
+	which is mentioned in application.yml file.
+	
+2. URL : http://localhost:8080/currentTime
+
+
+Note :
+	1. If you want to change the active profile name without changing the property file and don't need to change the execuatable, then 
+		a. First build the project and make the executable.
+		b. Then run command : java -jar -Dspring.profiles.active=PROD target/jarfilename     from terminal,, it will restart the server
+		c. just hit the URL again, this time you will get PROD data.
+		
+	2. Like if you want to change the port no then hit below command :
+			java -jar -Dspring.profiles.active=PROD -Dserver.port=8081 target/jarfilename

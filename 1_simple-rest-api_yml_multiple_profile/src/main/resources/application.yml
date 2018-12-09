@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active: DEV
+
+---
+spring:
+  profiles: DEV
+
+message: Hello from DEV environment and the current time is
+
+
+---
+spring:
+  profiles: PROD
+
+message: Hello from PROD environment and the current time is
+
+---
+spring:
+  profiles: UAT
+
+message: Hello from PROD environment and the current time is
